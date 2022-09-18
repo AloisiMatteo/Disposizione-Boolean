@@ -222,6 +222,126 @@ body {
         top: -30px;
         width: 110%;
     }
- 
-    
+}
+
+/* Inizio sezione scopri corsi */
+.cont-scopri-corsi-generale {
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 72px;
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: 940px;
+    width: 100%;
+}
+
+.cont-scopri-corsi-generale h3 {
+    padding: 0px 0px 32px;
+    font-family: Gilroy-Bold;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 46px;
+}
+
+.cont-scelta-corso {
+    gap: 32px;
+}
+
+.scelta-corso-sinistra-secondo,
+.scelta-corso-destra-secondo {
+    flex-direction: column;
+}
+
+.scelta-corso-sinistra,
+.scelta-corso-destra {
+    background-color: var(--background-scopri-corsi);
+    border-radius: 2px;
+    color: var(--colore-freccia-scopri-corsi);
+    display: flex;
+    margin-bottom: 24px;
+    padding: 16px;
+    border: 1.5px solid var(--border-scopri-corsi);
+    cursor: pointer;
+}
+
+.scelta-corso-sinistra:hover,
+.scelta-corso-destra:hover {
+    border: 1px solid var(--bottone-entra-boolean-hover);
+}
+
+.scelta-corso-sinistra-secondo svg,
+.scelta-corso-destra-secondo svg {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+}
+
+.scelta-corso-sinistra-primo {
+    background-color: #00de6b;
+    width: 67px;
+    height: 67px;
+}
+
+.scelta-corso-destra-primo {
+    background-color: #cad4fb;
+    width: 67px;
+    height: 67px;
+}
+
+.scelta-corso-sinistra-secondo,
+.scelta-corso-destra-secondo {
+    padding: 10px 32px 10px 16px;
+    position: relative;
+}
+
+.scelta-corso-sinistra-secondo h4,
+.scelta-corso-destra-secondo h4 {
+    color: var(--colore-titolo-scopri-corso);
+    font-family: Gilroy-Bold;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 23px;
+}
+.scelta-corso-sinistra-secondo p,
+.scelta-corso-destra-secondo p {
+    font-family: Gilroy-Medium;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+@media screen and (max-width:940px) {
+    .cont-scelta-corso {
+        flex-direction: column;
+        gap: 0px;
+    }
+    .cont-scopri-corsi-generale {
+        max-width: 576px;
+    }
+    .scelta-corso-sinistra {
+        padding: 16px 0px;
+        margin-bottom: 0px;
+        border-bottom: 1.5px solid #cad4fb;
+        background-color: var(--background-body);
+    }
+    .scelta-corso-destra {
+        background-color: var(--background-body);
+        padding: 16px 0px;
+        margin-bottom: 0px;
+    }
+    .cont-scopri-corsi-generale h3 {
+        font-family: Gilroy-Bold;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 0;
+        line-height: 28px;
+    }
 }
