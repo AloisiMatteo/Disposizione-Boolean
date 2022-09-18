@@ -9,13 +9,52 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Girloy-Medium;
+}
+
 .flex {
     display: flex;
 }
 
 /* Inizio CSS sito */
-
-.cont-nav-and-entra-boolean {
+.cont-nav-and-entra-boolean {           /* Colore gradiant tra la nav e la sezione sotto */
     flex-direction: column;
     background-color: var(--background-navbar-entra-boolean);
+}
+
+/* Inizio NavBar */
+.cont-navbar-generale {
+    background-color: var(--background-navbar);
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    padding: 16px 80px;
+}
+
+..navbar-parte-centrale {
+    font-family: Girloy-Bold;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.navbar-parte-centrale .item {
+    margin: 0px 20px;
+}
+
+.navbar-parte-centrale .item:hover {
+    cursor: pointer;
+}
+
+.navbar-parte-destra button {
+    background-color: var(--bottone-navbar);
+    border: var(--bottone-navbar);
+    font-family: Gilroy-Bold;
+    font-size: 16px;
+    color: var(--bottone-navbar-testo);
+    padding: 10px 22px;
+    cursor: pointer;
+    border-radius: 2px;
 }
