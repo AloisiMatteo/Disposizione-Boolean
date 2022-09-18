@@ -1,4 +1,6 @@
 :root {
+    --background-body: #fff;
+    --background-navbar: #fff;
     --bottone-navbar: #3535ec;
     --bottone-entra-boolean: #001632;
     --bottone-entra-boolean-hover: #007aff;
