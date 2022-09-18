@@ -22,7 +22,7 @@ body {
 /* Inizio CSS sito */
 .cont-nav-and-entra-boolean {           /* Colore gradiant tra la nav e la sezione sotto */
     flex-direction: column;
-    background-color: var(--background-navbar-entra-boolean);
+    background: var(--background-navbar-entra-boolean);
     padding: 192px 0px 48px;
     padding-bottom: 16px;
 }
@@ -37,6 +37,7 @@ body {
     position: fixed;
     padding: 16px 80px;
     top: 0;
+    z-index: 2000;
 }
 
 .navbar-parte-sinistra .logo-940 {
@@ -223,6 +224,31 @@ body {
         width: 110%;
     }
 }
+@media screen and (max-width:577px) {
+    .cont-entra-boolean-generale {
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 16px;
+        padding-right: 16px;
+        width: 100%;
+        align-items: center;
+    }
+    .entra-boolean-sinistra {
+        order: 2;
+        max-width: 100%;
+    }
+    .entra-boolean-destra {
+        order: 1;
+    }
+    .entra-boolean-sinistra button {
+        width: 100%;
+    }
+    .entra-boolean-sinistra .item:first-child {
+        margin-bottom: 8px;
+        margin-top: -32px;
+    }
+}
 
 /* Inizio sezione scopri corsi */
 .cont-scopri-corsi-generale {
@@ -345,3 +371,61 @@ body {
         line-height: 28px;
     }
 }
+
+/* Inizio info sulla garanzia di assunzione */
+.cont-garante-successo-generale {
+    flex-direction: column;
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+}
+
+.cont-garante-successo-generale .item:first-child h2 {
+    margin: 0px 0px 16px;
+    font-family: Gilroy-Bold;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 30px;
+}
+
+.cont-garante-successo-generale .item:nth-child(2) p {
+    font-family: Gilroy-Medium;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 34px;
+}
+
+.cont-garante-successo-generale .item:nth-child(3) a {
+    color: var(--link-garante-successo);
+}
+.cont-garante-successo-generale .item:nth-child(3):hover {
+    color: var(--link-garante-successo-hover);
+    cursor: pointer;
+}
+.cont-garante-successo-generale .item:nth-child(3):hover a {
+    color: var(--link-garante-successo-hover);
+}
+.cont-garante-successo-generale .item:nth-child(3) a:hover {
+    color: var(--link-garante-successo-hover);
+}
+.cont-garante-successo-generale .item:nth-child(3) {
+    margin: 40px 0px 0px;
+}
+.cont-garante-successo-generale .item:nth-child(3) svg {
+    margin-left: 16px;
+}
+
+@media screen and (max-width:940px) {
+    .cont-garante-successo-generale {
+        max-width: 576px;
+    }
+}
+
+/* Inizio sezione dettagli sulle procedure del corso */
