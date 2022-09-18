@@ -1,5 +1,5 @@
 @import url(assets/color/color.css);    /* Importo colori del sito */
-@import url(assets/font/font.css);      /* Importo font del sito */
+@import url(assets/font/*);             /* Importo font del sito */
 @import url(assets/image/*);            /* Importo immagini del sito */
 
 /* Formattazione sito */
@@ -11,6 +11,8 @@
 
 body {
     font-family: Girloy-Medium;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .flex {
@@ -21,6 +23,8 @@ body {
 .cont-nav-and-entra-boolean {           /* Colore gradiant tra la nav e la sezione sotto */
     flex-direction: column;
     background-color: var(--background-navbar-entra-boolean);
+    padding: 192px 0px 48px;
+    padding-bottom: 16px;
 }
 
 /* Inizio NavBar */
@@ -32,6 +36,7 @@ body {
     width: 100%;
     position: fixed;
     padding: 16px 80px;
+    top: 0;
 }
 
 .navbar-parte-sinistra .logo-940 {
@@ -117,3 +122,106 @@ body {
 }
 
 /* Inizio prima informazione sull'iscrizione */
+.cont-entra-boolean-generale {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 16px;
+    width: 100%;
+    max-width: 940px;
+    flex-wrap: wrap;
+}
+
+.entra-boolean-sinistra {
+    order: 1;
+    flex-direction: column;
+    padding: 0px 16px;
+    flex: 0 0 58.33333333%;
+    max-width: 58.33333333%;
+}
+
+.entra-boolean-destra {
+    order: 2;
+    padding: 0px 16px;
+    flex: 0 0 41.66666667%;
+    max-width: 41.66666667%;
+}
+
+.entra-boolean-destra img {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: -50px;
+    width: 100%;
+}
+
+.entra-boolean-sinistra .item:first-child {
+    font-family: Gilroy-Bold;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 63px;
+    margin: -32px 0px 16px;
+}
+
+.entra-boolean-sinistra .item:nth-child(2) {
+    font-family: Gilroy-Medium;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    margin: 0px 0px 32px;
+}
+
+.entra-boolean-sinistra button {
+    background-color: var(--bottone-entra-boolean);
+    border: var(--bottone-entra-boolean);
+    color: var(--bottone-entra-boolean-testo);
+    width: 144.22px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 0px 0px 24px;
+    padding: 15px 28px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.entra-boolean-sinistra button:hover {
+    background-color: var(--bottone-entra-boolean-hover);
+    border: var(--bottone-entra-boolean-hover);
+}
+
+@media screen and (max-width:940px) {
+    .cont-entra-boolean-generale {
+        max-width: 576px;
+    }
+
+    .entra-boolean-sinistra button {
+        width: 100%;
+    }
+    .entra-boolean-sinistra .item:first-child {
+        font-family: Gilroy-Bold;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 0;
+        line-height: 37px;
+    }
+    .entra-boolean-sinistra .item:nth-child(2) {
+        font-family: Gilroy-Medium;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: 0;
+        line-height: 27px;
+    }
+    .entra-boolean-destra {
+        height: 327px;
+    }
+    .entra-boolean-destra img {
+        top: -30px;
+        width: 110%;
+    }
+ 
+    
+}
