@@ -1,0 +1,31 @@
+:root {
+    --bottone-navbar: #3535ec;
+    --bottone-entra-boolean: #001632;
+    --bottone-entra-boolean-hover: #007aff;
+    --bordo-scopri-corsi: #f5f7fe;
+    --bordo-scopri-corsi-hover: #5e7899;
+    --background-scopri-corsi: #f5f7fe;
+    --link-garante-successo: #001632;
+    --link-garante-successo-hover: #F71469;
+    --strumenti-corso-hover: #3535ec;
+    --scarica-programma-titolo: #00de6b;
+    --scarica-programma-testo: #fff;
+    --bordi-bottone-scar-prog: #84a5fa;
+    --bordi-bottone-scar-prog-hover: #f5f7fe;
+    --colore-testo-bottone-scar-prog: #f5f7fe;
+    --background-invio-scar-prog: #84a5fa;
+    --colore-testo-invio-scar-prog: #ebeffd;
+    --colore-term-serv-scar-prog: #cad4fb;
+    --background-scar-prog: #3535ec;
+    --bottone-lettura-recenzioni: #3535ec;
+    --background-bottone-lett-recenzioni: #ebeffd;
+    --background-titolo-fundamentals-cmp: linear-gradient(127.28deg,#e5fcf0 28.39%,#cad4fb 104.32%);
+    --background-invio-bottone-fundamental: #001632;
+    --bottone-invio-fundamental-hover:  linear-gradient(127.28deg,#e5fcf0 28.39%,#cad4fb 104.32%);
+    --background-secondo-scopri-corsi: #ebeffd;
+    --background-footer: #001632;
+    --colore-titolo-footer: #b5c5dd;
+    --colore-testo-footer: #fff;
+    --colore-info-azienda-boolean: #5e7899;
+    
+}

@@ -1,0 +1,12 @@
+/* Formattazione sito */
+* {
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url(assets/color/color.css);    /* Importo colori del sito */
+
+
+/* Inizio CSS sito */
+
