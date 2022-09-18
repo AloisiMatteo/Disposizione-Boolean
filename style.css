@@ -1,3 +1,7 @@
+@import url(assets/color/color.css);    /* Importo colori del sito */
+@import url(assets/font/font.css);      /* Importo font del sito */
+@import url(assets/image/*);            /* Importo immagini del sito */
+
 /* Formattazione sito */
 * {
     padding: 0%;
@@ -5,9 +9,13 @@
     box-sizing: border-box;
 }
 
-@import url(assets/color/color.css);    /* Importo colori del sito */
-@import url(assets/font/font.css);      /* Importo font del sito */
-@import url(assets/image/*);            /* Importo immagini del sito */
+.flex {
+    display: flex;
+}
 
 /* Inizio CSS sito */
 
+.cont-nav-and-entra-boolean {
+    flex-direction: column;
+    background-color: var(--background-navbar-entra-boolean);
+}
