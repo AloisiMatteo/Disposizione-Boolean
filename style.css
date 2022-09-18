@@ -28,12 +28,17 @@ body {
     background-color: var(--background-navbar);
     align-items: center;
     justify-content: space-between;
+    text-align: center;
     width: 100%;
     position: fixed;
     padding: 16px 80px;
 }
 
-..navbar-parte-centrale {
+.navbar-parte-sinistra .logo-940 {
+    display: none;
+}
+
+.navbar-parte-centrale {
     font-family: Girloy-Bold;
     align-items: center;
     justify-content: center;
@@ -58,3 +63,57 @@ body {
     cursor: pointer;
     border-radius: 2px;
 }
+
+.navbar-parte-destra .cont-menu {
+    cursor: pointer;
+    position: relative;
+    height: 42px;
+    margin-left: 24px;
+    width: 30px;
+    display: none;
+}
+
+.navbar-parte-destra .cont-menu span {
+    background: #001632;
+    display: block;
+    height: 4px;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+}
+
+.cont-menu span:first-child {
+    top: 10px;
+}
+.cont-menu span:nth-child(2),
+.cont-menu span:nth-child(3) {
+    top: 19px;
+}
+.cont-menu span:nth-child(4) {
+    top: 28px;
+}
+
+
+@media screen and (max-width: 940px) { /* Navbar adattamento mobile  */
+    .cont-navbar-generale {
+        padding: 16px 24px;
+    }
+    .navbar-parte-centrale {
+        display: none;
+    }
+    .navbar-parte-sinistra .logo {
+        display: none;
+    }
+
+    .navbar-parte-sinistra .logo-940 {
+        display: flex;
+    }
+
+    .navbar-parte-destra .cont-menu {
+        display: block;
+    }
+
+}
+
+/* Inizio prima informazione sull'iscrizione */
