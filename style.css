@@ -651,3 +651,127 @@ body {
 }
 
 /* Inizio sezione per scaricare il programma del corso */
+.cont-scarica-corso-generale {
+    background-color: var(--background-scar-prog);
+    color: var(--scarica-programma-testo);
+    justify-content: space-between;
+    align-items: center;
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 165px;
+    width: 100%;
+    margin-top: 96px;
+}
+
+.scarica-corso-sinistra {
+    padding: 0px 16px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.scarica-corso-sinistra strong {
+    font-family: Gilroy-Bold;
+    color: var(--scarica-programma-titolo);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 23px;
+}
+.scarica-corso-sinistra h3 {
+    font-family: Gilroy-Bold;
+    color: white;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 30px;
+}
+
+.scarica-corso-destra {
+    margin-top: 40px;
+    padding: 0px 16px;
+    margin-bottom: 40px;
+}
+
+.scarica-corso-destra button {
+    cursor: pointer;
+    padding: 15px 28px;
+    background-color: var(--background-invio-scar-prog);
+    border: 2px solid var(--bordi-bottone-scar-prog);
+    border-radius: 2px;
+    color: var(--colore-testo-bottone-scar-prog);
+    margin-right: 12px;
+    font-family: Gilroy-Medium;
+    width: 100%;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.scarica-corso-destra input {
+    border: 2px solid var(--bordi-bottone-scar-prog);
+    border-radius: 2px;
+    box-sizing: border-box;
+    background-color: var(--background-scar-prog);
+    color: var(--colore-testo-bottone-scar-prog);
+    padding: 15px 28px;
+    margin-right: 12px;
+    font-family: Gilroy-Medium;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.scarica-corso-destra-giu {
+    padding: 16px 0px 0px;
+    color: var(--colore-testo-term-servizio);
+}
+.scarica-corso-destra-giu a {
+    color: var(--colore-testo-term-servizio);
+    margin-left: 3px;
+}
+.scarica-corso-destra-giu input {
+    background-color: var(--background-scar-prog);
+    border: 2px solid var(--bordi-bottone-scar-prog);
+}
+
+@media screen and (max-width:940px) {
+    .cont-scarica-corso-generale {
+        max-width: 576px;
+        flex-direction: column;
+        height: 100%;
+        align-items: flex-start;
+        padding-top: 5px;
+    }
+    .scarica-corso-sinistra {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+    .scarica-corso-destra {
+        padding: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        max-width: 100%;
+        width: 100%;
+    }
+    .scarica-corso-destra button {
+        padding: 10px 16px;
+        width: 30%;
+    }
+    .scarica-corso-destra-su input {
+        width: 70%;
+    }
+    .scarica-corso-destra-giu {
+        padding-bottom: 16px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .cont-scarica-corso-generale {
+        max-width: 100%;
+    }
+}
