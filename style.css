@@ -426,6 +426,80 @@ body {
     .cont-garante-successo-generale {
         max-width: 576px;
     }
+    .cont-garante-successo-generale .item:first-child h2 {
+        font-size: 20px;
+    }
+    .cont-garante-successo-generale .item:nth-child(2) p {
+        font-size: 18px;
+    }
 }
 
 /* Inizio sezione dettagli sulle procedure del corso */
+.cont-esp-riv-generale {
+    max-width: 940px;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 48px;
+    width: 100%;
+}
+
+.cont-esp-riv-generale .item:first-child{
+    font-family: Gilroy-Bold;
+    letter-spacing: 0;
+    line-height: 46px;
+}
+
+.cont-esp-riv-generale .item:first-child h2 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.cont-esp-riv-generale .item:nth-child(2) {
+    font-family: Gilroy-Medium;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 34px;
+    margin-top: 16px;
+}
+
+@media screen and (max-width:940px) {
+    .cont-esp-riv-generale {
+        max-width: 576px;
+    }
+    .cont-esp-riv-generale .item:first-child h2 {
+        font-size: 24px;
+    }
+    .cont-esp-riv-generale .item:nth-child(2) p {
+        font-size: 18px;
+    }
+}
+/* Adattamento cont esperienze insieme a cont garanzie successo
+    (visto che si uniscono) */
+@media screen and (max-width:575px) { 
+    .cont-garante-successo-generale .item:first-child h2 {
+        margin: 0px 0px 8px;
+        width: 100%;
+        max-width: 100%;
+    }
+    .cont-garante-successo-generale .item:nth-child(2) {
+        max-width: 100%;
+        width: 100%;
+    }
+    .cont-garante-successo-generale .item:nth-child(3) {
+        margin: 24px 0px 0px;
+    }
+    .cont-esp-riv-generale {
+        margin-top: 32px;
+    }
+    .cont-esp-riv-generale .item:nth-child(2) {
+        margin-top: 8px;
+    }
+}
+
+/* Inizio sezione riguardanti gli strumenti del corso */
