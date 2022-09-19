@@ -1,22 +1,26 @@
 @import url(assets/color/color.css);    /* Importo colori del sito */
-@import url(assets/font/*);             /* Importo font del sito */
-@import url(assets/image/*);            /* Importo immagini del sito */
+@import url(assets/font/font.css);       /* Importo font del sito */
 
 /* Formattazione sito */
 * {
     padding: 0%;
     margin: 0;
     box-sizing: border-box;
+    font-family: Gilroy-Medium;
 }
 
 body {
-    font-family: Girloy-Medium;
+    font-family: Gilroy-Medium;
     overflow-y: scroll;
     overflow-x: hidden;
 }
 
 .flex {
     display: flex;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
 }
 
 /* Inizio CSS sito */
@@ -45,10 +49,11 @@ body {
 }
 
 .navbar-parte-centrale {
-    font-family: Girloy-Bold;
+    font-family: Gilroy-Bold;
     align-items: center;
     justify-content: center;
     text-align: center;
+    font-weight: 600;
 }
 
 .navbar-parte-centrale .item {
@@ -62,7 +67,7 @@ body {
 .navbar-parte-destra button {
     background-color: var(--bottone-navbar);
     border: var(--bottone-navbar);
-    font-family: Gilroy-Bold;
+    font-family: bold;
     font-size: 16px;
     color: var(--bottone-navbar-testo);
     padding: 10px 22px;
@@ -343,6 +348,23 @@ body {
     line-height: 24px;
 }
 
+.scelta-corso-sinistra-primo svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+}
+.scelta-corso-destra-primo svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+}
+
 @media screen and (max-width:940px) {
     .cont-scelta-corso {
         flex-direction: column;
@@ -503,3 +525,129 @@ body {
 }
 
 /* Inizio sezione riguardanti gli strumenti del corso */
+.cont-strumenti-corso-generale {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 48px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.str-corso-destra-su,
+.str-corso-destra-centro,
+.str-corso-destra-giu {
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.strumenti-corso-sinistra {
+    order: 2;
+    position: relative;
+    margin-left: 8.33333333%;
+    max-width: 53%;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.strumenti-corso-sinistra img {
+    width: 100%;
+}
+.strumenti-corso-sinistra img:nth-child(2),
+.strumenti-corso-sinistra img:nth-child(3) {
+    display: none;
+}
+.strumenti-corso-destra {
+    order: 1;
+    flex-direction: column;
+    max-width: 35.666667%;
+}
+
+.titolo-str-corso {
+    font-family: Gilroy-Bold;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 30px;
+    margin-bottom: 8px;
+}
+
+.desc-str-corso {
+    font-family: Gilroy-Medium;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 27px;
+    color: var(--bottone-entra-boolean);
+}
+
+.str-corso-destra-su:hover,
+.str-corso-destra-centro:hover,
+.str-corso-destra-giu:hover{
+    color: var(--strumenti-corso-hover);
+}
+
+@media screen and (max-width:940px) {
+    .cont-strumenti-corso-generale {
+        max-width: 576px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 48px;
+    }
+    .strumenti-corso-sinistra {
+        order: 1;
+        display: flex;
+        position: relative;
+        margin-left: 0px;
+        max-width: 100%;
+        padding-left: 0px;
+        width: 100%;
+    }
+    .strumenti-corso-destra {
+        order: 2;
+        max-width: 100%;
+        margin-top: 48px;
+    }
+    .strumenti-corso-sinistra img:first-child,
+    .strumenti-corso-sinistra img:nth-child(2),
+    .strumenti-corso-sinistra img:nth-child(3) {
+        display: flex;
+        width: 181px;
+        height: 226px;
+    }
+    .titolo-str-corso {
+        font-size: 20px;
+    }
+    .desc-str-corso {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:575px) {
+    .strumenti-corso-sinistra img:nth-child(2),
+    .strumenti-corso-sinistra img:nth-child(3) {
+        display: none;
+    }
+    .strumenti-corso-sinistra img:first-child {
+        width: 100%;
+        height: 100%;
+    }
+    .str-corso-destra-su:hover,
+    .str-corso-destra-centro:hover,
+    .str-corso-destra-giu:hover{
+        color: #000000;
+    }
+    .titolo-str-corso {
+        font-size: 26px;
+    }
+    .desc-str-corso {
+        font-size: 18px;
+    }
+
+
+}
+
+/* Inizio sezione per scaricare il programma del corso */
