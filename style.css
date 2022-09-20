@@ -978,3 +978,85 @@ body {
 }
 
 /* Inizio sezione dedicata ai collaboratori */
+.cont-collaboratori-generale {
+    margin-top: 96px;
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+}
+
+.collaboratori-titolo {
+    margin-bottom: 16px;
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.collaboratori-titolo h3 {
+    color: var(--colore-titolo-scopri-corso);
+    font-family: Gilroy-Bold;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 46px;
+}
+
+.collaboratori-sottotitolo {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.collaboratori-sottotitolo p {
+    color: var(--colore-titolo-scopri-corso);
+    font-family: Gilroy-Medium;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 34px;
+}
+
+.lista-collaboratori {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px 0;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.lista-collaboratori img {
+    height: 56px;
+    margin: 16px 8px;
+}
+
+.info-lista-collaboratori {
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.info-lista-collaboratori span {
+    color: var(--colore-freccia-scopri-corsi);
+    font-family: Gilroy-Medium;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+@media screen and (max-width:940px) {
+    .cont-collaboratori-generale {
+        max-width: 576px;
+    }
+    .lista-collaboratori img {
+        height: 40px;
+        margin: 16px 8px;
+    }
+}
