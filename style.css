@@ -900,6 +900,14 @@ body {
         margin-top: 50px;
     }
 }
+@media screen and (max-width:580px) {
+    .box-video-studente {
+        margin-top: 16px;
+    }
+    .cont-video-studenti-generale {
+        padding-bottom: 0px;
+    }
+}
 
 /* Inizio sezione lettura recenzioni */
 .cont-lettura-recenzioni-generale {
@@ -974,6 +982,17 @@ body {
 @media screen and (max-width:940px) {
     .cont-lettura-recenzioni-generale {
         max-width: 576px;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .cont-lettura-recenzioni-generale {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .lettura-recenzioni-sinistra .item {
+        margin-top: 16px;
     }
 }
 
@@ -1058,5 +1077,260 @@ body {
     .lista-collaboratori img {
         height: 40px;
         margin: 16px 8px;
+    }
+}
+@media screen and (max-width:580px) {
+    .cont-collaboratori-generale {
+        max-width: 100%;
+    }
+    .collaboratori-titolo h3 {
+        font-size: 23px;
+        line-height: 28px;
+    }
+    .collaboratori-titolo {
+        max-width: 100%;
+        width: 100%;
+    }
+    .collaboratori-sottotitolo p {
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .lista-collaboratori {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    .lista-collaboratori img {
+        height: 28px;
+        margin: 8px;
+    }
+    .info-lista-collaboratori span {
+        font-size: 16px;
+    }
+}
+/* Inizio sezione scritta animata */
+.cont-scritta-animata-generale {
+    margin-top: 96px;
+    background-color: var(--background-scar-prog);
+    min-height: 125px;
+    width: 100%;
+    align-items: center;
+}
+
+.cont-riga-animata {
+    -webkit-animation: marquee1 28s linear infinite;
+    animation: marquee1 28s linear infinite;
+    justify-content: space-around;
+    transform: translateX(0);
+    width: 3000px;
+}
+
+.cont-riga-animata strong {
+    color: var(--bordo-scopri-corsi);
+    font-family: Gilroy-Bold;
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0;
+}
+
+.cont-riga-animata span {
+    color: var(--background-invio-scar-prog);
+    font-family: Gilroy-Bold;
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+
+.cont-riga-animata .item {
+    width: 1000px;
+    display: inline-block;
+    height: 39px;
+    text-align: center;
+}
+
+/* Inizio sezione fundamental */
+.cont-fundamental-generale {
+    max-width: 940px;
+    margin-bottom: 72px;
+    margin-top: 72px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+}
+
+.fundamental-generale-su .titolo {
+    color: var(--link-garante-successo);
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+    font-family: Gilroy-Bold;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 46px;
+    margin-top: 32px;
+}
+
+.background-titolo-fundamental {
+    padding: 8px 6px 2px;
+    transition: .8s ease-in-out;
+    background-repeat: no-repeat;
+    background-image: var(--background-titolo-fundamentals-cmp);
+}
+
+.fundamental-generale-su .descrizione {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.fundamental-generale-su .descrizione p {
+    font-family: Gilroy-Medium;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 34px;
+}
+
+.fundamental-sez-giu-sinistra,
+.fundamental-sez-giu-destra {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 56px;
+}
+.fundamental-sez-giu-destra {
+    padding-left: 32px;
+}
+
+.fundamental-sez-giu-sinistra .cont-iframe {
+    border-radius: 2px;
+    overflow: hidden;
+    padding: 125% 0 0;
+    position: relative;
+}
+
+.fundamental-sez-giu-sinistra .cont-iframe iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.fundamental-sez-giu-destra .item:first-child {
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+.fundamental-sez-giu-destra .item:nth-child(2) {
+    margin-bottom: 40px;
+}
+
+.fundamental-sez-giu-destra .item h3 {
+    color: var(--link-garante-successo);
+    font-family: Gilroy-Bold;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 30px;
+    margin-bottom: 8px;
+}
+
+.fundamental-sez-giu-destra .item p {
+    width: 100%;
+    font-family: Gilroy-Medium;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 27px;
+}
+
+.fundamental-sez-giu-destra a {
+    background-color: #001632;
+    border: none;
+    border-radius: 2px;
+    color: #f5f7fe;
+    cursor: pointer;
+    font-family: Gilroy-Medium;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    padding: 15px 28px;
+    text-align: center;
+    text-decoration: none;
+    max-width: max-content;
+}
+
+.fundamental-sez-giu-destra a:hover {
+    background: var(--bottone-invio-fundamental-hover);
+    color: var(--background-invio-bottone-fundamental);
+}
+
+@media screen and (max-width:940px) {
+    .cont-fundamental-generale {
+        max-width: 576px;
+    }
+    .fundamental-sez-giu-destra .item h3 {
+        font-size: 20px;
+    }
+    .fundamental-sez-giu-destra .item p,
+    .fundamental-sez-giu-destra .item a {
+        font-size: 16px;
+    }
+    .fundamental-sez-giu-destra {
+        margin-top: 40px;
+    }
+    .fundamental-sez-giu-destra .item:first-child,
+    .fundamental-sez-giu-destra .item:nth-child(2) {
+        margin-bottom: 24px;
+    }
+    .fundamental-sez-giu-destra a {
+        padding: 10px 13px;
+        line-height: 24px;
+        font-size: 16px;
+    }
+    .fundamental-generale-su .titolo {
+        font-size: 24px;
+        line-height: 32px;
+        padding-right: 16px;
+    }
+    .fundamental-generale-su .descrizione p {
+        font-size: 18px;
+        line-height: 27px;
+    }
+}
+@media screen and (max-width:580px) {
+    .fundamental-generale-giu {
+        flex-direction: column;
+        max-width: 100%;
+        width: 100%;
+    }
+    .fundamental-sez-giu-sinistra,
+    .fundamental-sez-giu-destra {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .fundamental-sez-giu-destra {
+        margin-top: 24px;
+        padding: 0px;
+    }
+    .fundamental-sez-giu-destra .item:first-child {
+        margin-top: 24px;
+        margin-bottom: 16px;
+    }
+    .fundamental-sez-giu-destra .item:nth-child(2) {
+        margin-bottom: 16px;
+    }
+    .fundamental-sez-giu-destra a {
+        max-width: 100%;
     }
 }
