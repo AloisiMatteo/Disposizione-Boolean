@@ -9,6 +9,17 @@
     font-family: Gilroy-Medium;
 }
 
+@keyframes marquee1 {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        display: block;
+        transform: translateX(-100%);
+    }
+}
+
 body {
     font-family: Gilroy-Medium;
     overflow-y: scroll;
@@ -1113,14 +1124,15 @@ body {
     background-color: var(--background-scar-prog);
     min-height: 125px;
     width: 100%;
+    overflow: hidden;
     align-items: center;
 }
 
 .cont-riga-animata {
     -webkit-animation: marquee1 28s linear infinite;
     animation: marquee1 28s linear infinite;
-    justify-content: space-around;
     transform: translateX(0);
+    justify-content: space-around;
     width: 3000px;
 }
 
@@ -1482,3 +1494,5 @@ body {
         line-height: 28px;
     }
 }
+
+/* Inizio footer */
