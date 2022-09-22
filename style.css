@@ -339,17 +339,12 @@ body {
     line-height: 46px;
 }
 
-.cont-scelta-corso {
-    gap: 32px;
-}
-
 .scelta-corso-sinistra-secondo,
 .scelta-corso-destra-secondo {
     flex-direction: column;
 }
 
-.scelta-corso-sinistra,
-.scelta-corso-destra {
+.scelta-corso-sinistra, .scelta-corso-destra {
     background-color: var(--background-scopri-corsi);
     border-radius: 2px;
     color: var(--colore-freccia-scopri-corsi);
@@ -358,6 +353,10 @@ body {
     padding: 16px;
     border: 1.5px solid var(--border-scopri-corsi);
     cursor: pointer;
+    flex: 0 0 50%;
+    max-width: 48%;
+    margin-right: 32px;
+    position: relative;
 }
 
 .scelta-corso-sinistra:hover,
@@ -365,11 +364,15 @@ body {
     border: 1px solid var(--bottone-entra-boolean-hover);
 }
 
-.scelta-corso-sinistra-secondo svg,
-.scelta-corso-destra-secondo svg {
+.scelta-corso-sinistra-secondo svg, .scelta-corso-destra-secondo svg {
+    color: var(--colore-freccia-scopri-corsi);
+    font-family: BooleanFont;
+    font-style: normal;
+    font-weight: 700;
     position: absolute;
+    right: 19px;
     top: 50%;
-    right: 0px;
+    transform: translateY(-50%);
 }
 
 .scelta-corso-sinistra-primo {
@@ -387,7 +390,6 @@ body {
 .scelta-corso-sinistra-secondo,
 .scelta-corso-destra-secondo {
     padding: 10px 32px 10px 16px;
-    position: relative;
 }
 
 .scelta-corso-sinistra-secondo h4,
@@ -440,11 +442,13 @@ body {
         margin-bottom: 0px;
         border-bottom: 1.5px solid #cad4fb;
         background-color: var(--background-body);
+        max-width: 100%;
     }
     .scelta-corso-destra {
         background-color: var(--background-body);
         padding: 16px 0px;
         margin-bottom: 0px;
+        max-width: 100%;
     }
     .cont-scopri-corsi-generale h3 {
         font-family: Gilroy-Bold;
@@ -1454,10 +1458,6 @@ body {
     line-height: 46px;
 }
 
-.cont2-scelta-corso {
-    gap: 32px;
-}
-
 .scelta2-corso-sinistra-secondo,
 .scelta2-corso-destra-secondo {
     flex-direction: column;
@@ -1473,6 +1473,10 @@ body {
     padding: 16px;
     border: 1.5px solid var(--border-scopri-corsi);
     cursor: pointer;
+    flex: 0 0 50%;
+    max-width: 48%;
+    margin-right: 32px;
+    position: relative;
 }
 
 .scelta2-corso-sinistra:hover,
@@ -1482,9 +1486,14 @@ body {
 
 .scelta2-corso-sinistra-secondo svg,
 .scelta2-corso-destra-secondo svg {
+    color: var(--colore-freccia-scopri-corsi);
+    font-family: BooleanFont;
+    font-style: normal;
+    font-weight: 700;
     position: absolute;
+    right: 19px;
     top: 50%;
-    right: 0px;
+    transform: translateY(-50%);
 }
 
 .scelta2-corso-sinistra-primo {
@@ -1502,7 +1511,6 @@ body {
 .scelta2-corso-sinistra-secondo,
 .scelta2-corso-destra-secondo {
     padding: 10px 32px 10px 16px;
-    position: relative;
 }
 
 .scelta2-corso-sinistra-secondo h4,
@@ -1558,11 +1566,13 @@ body {
         margin-bottom: 0px;
         border-bottom: 1.5px solid #cad4fb;
         background-color: transparent;
+        max-width: 100%;
     }
     .scelta2-corso-destra {
         background-color: transparent;
         padding: 16px 0px;
         margin-bottom: 0px;
+        max-width: 100%;
     }
     .cont2-scopri-corsi-generale h3 {
         font-family: Gilroy-Bold;
