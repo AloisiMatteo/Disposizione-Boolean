@@ -308,6 +308,9 @@ body {
     .entra-boolean-destra {
         order: 1;
     }
+    .entra-boolean-destra img {
+        top: -50px;
+    }
     .entra-boolean-sinistra button {
         width: 100%;
     }
@@ -459,7 +462,17 @@ body {
         line-height: 28px;
     }
 }
-
+@media screen and (max-width: 575px) {
+.scelta-corso-sinistra {
+    padding: 16px 0px;
+}
+.scelta-corso-sinistra-secondo h4, .scelta-corso-destra-secondo h4 {
+    font-size: 18px;
+}
+.scelta-corso-sinistra-secondo p, .scelta-corso-destra-secondo p {
+    font-size: 14px;
+}
+}
 /* Inizio info sulla garanzia di assunzione */
 .cont-garante-successo-generale {
     flex-direction: column;
@@ -1583,7 +1596,17 @@ body {
         line-height: 28px;
     }
 }
-
+@media screen and (max-width: 575px) {
+    .scelta2-corso-sinistra {
+        padding: 16px 0px;
+    }
+    .scelta2-corso-sinistra-secondo h4, .scelta2-corso-destra-secondo h4 {
+        font-size: 18px;
+    }
+    .scelta2-corso-sinistra-secondo p, .scelta2-corso-destra-secondo p {
+        font-size: 14px;
+    }
+    }
 /* Inizio footer */
 .separatore-footer {
     max-width: 100%;
