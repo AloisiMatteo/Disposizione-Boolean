@@ -799,6 +799,18 @@ body {
 .scarica-corso-destra-giu input {
     background-color: var(--background-scar-prog);
     border: 2px solid var(--bordi-bottone-scar-prog);
+    cursor: pointer;
+    margin-right: 8px;
+    opacity: 0;
+    position: relative;
+    z-index: 2;
+}
+.background-checkbox {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background-color: var(--background-scar-prog);
+    border: 2px solid var(--bordi-bottone-scar-prog);
 }
 
 @media screen and (max-width:940px) {
