@@ -1267,6 +1267,11 @@ body {
     transition: .8s ease-in-out;
     background-repeat: no-repeat;
     background-image: var(--background-titolo-fundamentals-cmp);
+    background-size: 0% 100%;
+}
+
+.animazione {
+    background-size: 100% 100%;
 }
 
 .fundamental-generale-su .descrizione {
