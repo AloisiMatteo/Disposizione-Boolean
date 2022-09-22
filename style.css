@@ -221,20 +221,24 @@ body {
     line-height: 34px;
 }
 
-.entra-boolean-sinistra button {
+.entra-boolean-sinistra a {
     background-color: var(--bottone-entra-boolean);
-    border: var(--bottone-entra-boolean);
-    color: var(--bottone-entra-boolean-testo);
-    width: 144.22px;
+    border: none;
+    border-radius: 2px;
+    color: #f5f7fe;
     cursor: pointer;
+    font-family: Gilroy-Medium;
     font-size: 18px;
-    margin: 0px 0px 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
     padding: 15px 28px;
     text-align: center;
-    border-radius: 2px;
+    text-decoration: none;
+    max-width: max-content;
 }
 
-.entra-boolean-sinistra button:hover {
+.entra-boolean-sinistra a:hover {
     background-color: var(--bottone-entra-boolean-hover);
     border: var(--bottone-entra-boolean-hover);
 }
@@ -244,8 +248,10 @@ body {
         max-width: 576px;
     }
 
-    .entra-boolean-sinistra button {
-        width: 100%;
+    .entra-boolean-sinistra a {
+        font-size: 16px;
+        max-width: 100%;
+        padding: 10px 12px;
     }
     .entra-boolean-sinistra .item:first-child {
         font-family: Gilroy-Bold;
@@ -1976,7 +1982,7 @@ body {
     }
     /* Adattamento footer parte sotto */
     .footer-generale-giu {
-        flex-direction: column;f
+        flex-direction: column;
         gap: 16px;
     }
 }
