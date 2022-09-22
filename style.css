@@ -73,6 +73,7 @@ body {
 
 .navbar-parte-centrale .item {
     margin: 0px 20px;
+    font-family: Gilroy-Bold;
 }
 
 .navbar-parte-centrale .item:hover {
