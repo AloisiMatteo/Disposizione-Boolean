@@ -721,10 +721,10 @@ body {
         color: #000000;
     }
     .titolo-str-corso {
-        font-size: 26px;
+        font-size: 20px;
     }
     .desc-str-corso {
-        font-size: 18px;
+        font-size: 16px;
     }
 
 
@@ -865,6 +865,7 @@ body {
 @media screen and (max-width:575px) {
     .cont-scarica-corso-generale {
         max-width: 100%;
+        margin-top: 32px;
     }
 }
 
@@ -1181,12 +1182,13 @@ body {
         margin: 16px 8px;
     }
 }
-@media screen and (max-width:580px) {
+@media screen and (max-width:575px) {
     .cont-collaboratori-generale {
         max-width: 100%;
+        margin-top: 32px;
     }
     .collaboratori-titolo h3 {
-        font-size: 23px;
+        font-size: 24px;
         line-height: 28px;
     }
     .collaboratori-titolo {
@@ -1200,13 +1202,14 @@ body {
     .lista-collaboratori {
         margin-top: 8px;
         margin-bottom: 8px;
+        padding: 0px 1px;
     }
     .lista-collaboratori img {
         height: 28px;
         margin: 8px;
     }
     .info-lista-collaboratori span {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 /* Inizio sezione scritta animata */
@@ -1253,6 +1256,11 @@ body {
     text-align: center;
 }
 
+@media screen and (max-width:575px) {
+    .cont-scritta-animata-generale {
+        margin-top: 48px;
+    }
+}
 /* Inizio sezione fundamental */
 .cont-fundamental-generale {
     max-width: 940px;
@@ -1416,7 +1424,11 @@ body {
         line-height: 27px;
     }
 }
-@media screen and (max-width:580px) {
+@media screen and (max-width:575px) {
+    .cont-fundamental-generale {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
     .fundamental-generale-giu {
         flex-direction: column;
         max-width: 100%;
@@ -1438,8 +1450,12 @@ body {
     .fundamental-sez-giu-destra .item:nth-child(2) {
         margin-bottom: 16px;
     }
-    .fundamental-sez-giu-destra a {
-        max-width: 100%;
+    .fundamental-sez-giu-destra a,
+    .fundamental-sez-giu-sinistra .cont-iframe {
+        max-width: 97%;
+    }
+    .fundamental-sez-giu-sinistra {
+        margin-top: 24px;
     }
 }
 
@@ -2047,7 +2063,7 @@ body {
         gap: 16px;
     }
 }
-@media screen and (max-width:580px){
+@media screen and (max-width:575px){
     .footer-sotto-adattato{
         background-color: rgba(94,120,153,.2);
         bottom: 0px;
@@ -2058,4 +2074,22 @@ body {
         width: 100vw;
         z-index: 0;
     }
+    .item-faq span:first-child, 
+    .item-informazioni span:first-child {
+        font-size: 18px;
+    }
+    .item-faq p, .item-faq p a,
+    .item-informazioni p, .item-informazioni p a {
+        font-size: 18px;
+    }
+    .item-modalita-ammissione span {
+        font-size: 14px;
+        width: 57%;
+    }
+    .item-accademia strong,
+    .item-servizi strong,
+    .item-corsi strong,
+    .item-aziende strong {
+        font-size: 18px;
+       }
 }
