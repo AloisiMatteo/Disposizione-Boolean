@@ -42,8 +42,8 @@ body {
 .cont-nav-and-entra-boolean {           /* Colore gradiant tra la nav e la sezione sotto */
     flex-direction: column;
     background: var(--background-navbar-entra-boolean);
-    padding: 192px 0px 48px;
-    padding-bottom: 16px;
+    padding: 159px 0px 48px;
+    padding-bottom: 70px;
 }
 
 /* Inizio NavBar */
@@ -178,9 +178,9 @@ body {
 .entra-boolean-sinistra {
     order: 1;
     flex-direction: column;
-    padding: 0px 16px;
     flex: 0 0 58.33333333%;
     max-width: 58.33333333%;
+    padding-right: 16px;
 }
 
 .entra-boolean-destra {
@@ -199,13 +199,16 @@ body {
 }
 
 .entra-boolean-sinistra .item:first-child {
-    font-family: Gilroy-Bold;
-    font-size: 28px;
     font-style: normal;
     font-weight: 600;
-    letter-spacing: 0;
+    letter-spacing: 0px;
     line-height: 63px;
-    margin: -32px 0px 16px;
+    margin-bottom: 16px;
+    margin-left: 0px;
+}
+.entra-boolean-sinistra .item:first-child h1 {
+    font-family: Gilroy-Bold;
+    font-size: 55px;
 }
 
 .entra-boolean-sinistra .item:nth-child(2) {
@@ -215,6 +218,7 @@ body {
     font-weight: 400;
     letter-spacing: 0;
     margin: 0px 0px 32px;
+    line-height: 34px;
 }
 
 .entra-boolean-sinistra button {
@@ -251,6 +255,16 @@ body {
         letter-spacing: 0;
         line-height: 37px;
     }
+
+    .entra-boolean-sinistra .item:first-child h1 {
+        font-family: Gilroy-Bold;
+        font-size: 33px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 0;
+        line-height: 37px;
+    }
+
     .entra-boolean-sinistra .item:nth-child(2) {
         font-family: Gilroy-Medium;
         font-size: 18px;
@@ -259,12 +273,16 @@ body {
         letter-spacing: 0;
         line-height: 27px;
     }
+    .entra-boolean-sinistra button {
+        padding: 10px 12px;
+        font-size: 16px;
+    }
     .entra-boolean-destra {
         height: 327px;
     }
     .entra-boolean-destra img {
-        top: -30px;
-        width: 110%;
+        top: 15px;
+        width: 118%;
     }
 }
 @media screen and (max-width:577px) {
@@ -1948,7 +1966,7 @@ body {
     }
     .footer-sotto-adattato {
         background-color: rgba(94,120,153,.2);
-        bottom: -1px;
+        bottom: 0px;
         height: 214px;
         left: -185px;
         display: block;
@@ -1958,7 +1976,7 @@ body {
     }
     /* Adattamento footer parte sotto */
     .footer-generale-giu {
-        flex-direction: column;
+        flex-direction: column;f
         gap: 16px;
     }
 }
