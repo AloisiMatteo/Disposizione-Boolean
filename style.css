@@ -933,7 +933,7 @@ body {
     z-index: 1;
     max-width: 100%;
     width: 100%;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
 }
 
 .riga-lista-video {
@@ -951,6 +951,16 @@ body {
 .box-video-studente iframe {
     height: 100%;
     width: 100%;
+}
+@media screen and (max-width:1456px) {
+    .box-video-studente {
+        height: 271px;
+        margin-top: -18px;
+    }
+    
+    .cont-video-studenti-generale {
+        max-width: 940px;
+    }
 }
 
 @media screen and (max-width:940px) {
@@ -980,6 +990,7 @@ body {
     padding-right: 16px;
     width: 100%;
     justify-content: space-between;
+    padding-bottom: 0px;
 }
 
 .lettura-recenzioni-sinistra {
